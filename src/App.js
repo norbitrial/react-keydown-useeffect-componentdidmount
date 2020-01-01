@@ -1,26 +1,25 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import KeyDownFunctional from './KeyDownFunctional';
+import KeyDownClass from './KeyDownClass';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  const [toggle, setToggle] = useState(true);
+  
+  return <>
+    <h1>React keydown useEffect componentDidMount <span role="img" aria-label="keyboardemoji">⌨️</span></h1>
+    <h2>The solution represents my answer to <a href="https://stackoverflow.com/questions/59546928/keydown-up-events-with-react-hooks-not-working-properly" target="_blank" rel="noopener noreferrer">this question</a> from Stack Overflow</h2>
+
+    <div className="choiceRadio">
+      <input type="radio" name="choice" value="class" checked={toggle} onChange={() => setToggle(true)} />
+      <label htmlFor="class">Class Component</label>
+
+      <input type="radio" name="choice" value="class" checked={!toggle} onChange={() => setToggle(false)} />
+      <label htmlFor="class">Functional Component</label>
     </div>
-  );
+
+    {toggle ? <KeyDownClass /> : <KeyDownFunctional />}
+  </>
 }
 
 export default App;

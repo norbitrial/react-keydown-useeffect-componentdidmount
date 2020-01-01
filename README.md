@@ -1,3 +1,9 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT) [![Dependency Status](https://david-dm.org/norbitrial/react-keydown-useeffect-componentdidmount.svg)](https://david-dm.org/norbitrial/react-keydown-useeffect-componentdidmount) [![Build Status](https://travis-ci.com/norbitrial/react-keydown-useeffect-componentdidmount.svg?branch=master)](https://travis-ci.com/norbitrial/react-keydown-useeffect-componentdidmount)
+
+## React keydown useEffect componentDidMount ⌨️
+
+This solution represents my answer to [this question](https://stackoverflow.com/questions/59546928/keydown-up-events-with-react-hooks-not-working-properly) on Stack Overflow.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
